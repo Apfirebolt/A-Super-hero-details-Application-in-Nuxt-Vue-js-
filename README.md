@@ -1,6 +1,9 @@
-# nuxt_superhero
+# Nuxt Superhero project powered by Vue Js
 
-> My doozie Nuxt.js project
+> Get details of all your favorite Marvel and DC superheroes under the same roof.
+API used for this project
+
+[Super-hero API](https://superheroapi.com/) 
 
 ## Build Setup
 
@@ -18,5 +21,7 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+Please check the screenshots for the project in the screenshot folder.
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
