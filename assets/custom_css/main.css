@@ -1,0 +1,24 @@
+/* Importing google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Gupter|Titillium+Web&display=swap');
+
+/*
+Using custom fonts
+font-family: 'Gupter', serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+
+.custom_link {
+  text-decoration: none;
+  color: cornflowerblue;
+  transition: all 0.5s ease-out;
+}
+
+.custom_link:hover {
+  background-color: white;
+  color: orange;
+  border-radius: 3rem;
+  padding: 1rem;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+}
