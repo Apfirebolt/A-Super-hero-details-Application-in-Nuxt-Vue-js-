@@ -64,7 +64,6 @@
   import PowerStats from '~/components/PowerStats.vue'
   import ConnectionsComponent from '~/components/Connections.vue'
 
-  const secret = 2395513583892376;
   export default {
     data() {
       return {
@@ -93,9 +92,6 @@
       ConnectionsComponent
     },
     methods: {
-      switchTab: function(event) {
-        console.log('Switch tab method called..', event.target);
-      },
       setData(current_index) {
         this.current_name = this.total_results[current_index].name;
         this.work = this.total_results[current_index].work;
@@ -109,7 +105,7 @@
         this.loading = true;
         axios
           .get(
-            `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${secret}/search/${this.current_hero}`
+            `https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/${process.env.API_KEY}/search/${this.current_hero}`
           )
           .then(res => {
             if(res.data.error) {
@@ -117,7 +113,6 @@
               return;
             }
             let current_data = res.data.results;
-            console.log(current_data);
             this.total_results = current_data;
             this.current_name = current_data[0].name;
             this.work = current_data[0].work;

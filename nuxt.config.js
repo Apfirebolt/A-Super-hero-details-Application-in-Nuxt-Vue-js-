@@ -51,5 +51,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  env: {
+    API_KEY: 2395513583892376
   }
 }

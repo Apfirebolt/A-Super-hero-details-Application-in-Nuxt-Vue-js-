@@ -20,14 +20,6 @@ export default {
       change_class: 'none-display'
     }
   },
-  components: {
-  },
-  methods: {
-
-  },
-  mounted() {
-
-  }
 }
 </script>
 
@@ -67,7 +59,5 @@ export default {
     background-color: orangered;
   }
 }
-
-
 
 </style>
