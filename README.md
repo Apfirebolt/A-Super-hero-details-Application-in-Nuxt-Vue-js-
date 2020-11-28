@@ -46,19 +46,19 @@ in the database of the API provided.
 
 Result not found page.
 
-![alt text](./screenshots/1.PNG)
+![alt text](./screenshots/1.png)
 
 A screen shot showing query made for Batman for which multiple 
 entries exist.
 
-![alt text](./screenshots/2.PNG)
+![alt text](./screenshots/2.png)
 
 A screen shot showing how data would be displayed of a superhero,
 in this example, data of Batman is depicted through component.
 
-![alt text](./screenshots/3.PNG)
+![alt text](./screenshots/3.png)
 
 This screen shot features search page where you can type the name of the superhero
 to search for.
 
-![alt text](./screenshots/4.PNG)
+![alt text](./screenshots/4.png)
