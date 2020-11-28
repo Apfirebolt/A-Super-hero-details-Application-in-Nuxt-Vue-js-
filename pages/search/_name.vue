@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <div>
       <nav>
         <div class="nav-item" :class="selected_tab == 'power' ? 'active' : null"
@@ -14,12 +14,12 @@
              class="nav-item" @click="selected_tab = 'work'" >Work</div>
       </nav>
 
-      <div class="container text-center">
+      <div class="container text-center my-3">
         <button class="btn-large btn-danger px-3" @click="$router.go(-1)">Go Back</button>
       </div>
 
       <div v-if="total_results.length == 0" class="container text-center">
-        <pulse-loader :loading="loading" :color="color">
+        <pulse-loader :loading="loading" :color="color" :size="size">
         </pulse-loader>
         <h2 v-if="error_text" class="text-danger bg-dark p-2 my-3 rounded">{{ error_text }}</h2>
       </div>
@@ -69,7 +69,7 @@
       return {
         current_hero: this.$route.params.name,
         color: 'red',
-        size: '150px',
+        size: '100px',
         loading: false,
         current_name: '',
         current_image: {},
@@ -137,18 +137,22 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 
     div.nav-item {
       border: 2px solid mintcream;
-      background: transparent;
+      background: greenyellow;
       padding: 0.8rem;
       min-width: 140px;
       font-family: 'Gupter', serif;
       transition: all 1s ease-out;
       text-align: center;
       border-radius: 0.5rem;
+      font-size: 1.5rem;
+      color: #47494e;
+      margin: 1rem;
     }
 
     div.nav-item:hover {
@@ -182,5 +186,6 @@
 
   .active {
     background-color: crimson !important;
+    color: white !important;
   }
 </style>

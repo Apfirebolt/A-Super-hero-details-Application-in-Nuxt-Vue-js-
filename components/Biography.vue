@@ -6,7 +6,8 @@
       </div>
       <div class="card-body">
         <div v-for="item in Object.keys(passed_data)" class="d-flex justify-content-between px-4 py-2">
-          {{ item }} <p class="biography-item">{{ passed_data[item] }}</p>
+          <p>{{ item }}</p>
+          <p class="biography-item">{{ passed_data[item] }}</p>
         </div>
         <h3 class="text-center my-3 p-2">Aliases (Alternate names)</h3>
         <ul>
@@ -47,6 +48,12 @@
       color: #FFF;
       font-family: 'Gupter', serif;
       list-style-type: none;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+
+      li {
+        margin: 1rem auto;
+      }
     }
   }
 </style>

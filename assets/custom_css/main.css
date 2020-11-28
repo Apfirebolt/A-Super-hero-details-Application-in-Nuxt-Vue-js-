@@ -22,3 +22,12 @@ font-family: 'Titillium Web', sans-serif;
   transition: all 0.5s ease-out;
   text-decoration: none;
 }
+
+#__nuxt {
+  background-image: url('../../assets/images/scratched-and-scraped-metal-texture-6.jpg');
+  font-family: 'Titillium Web', sans-serif;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
